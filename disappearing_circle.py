@@ -6,10 +6,6 @@ pixels = NeoPixel(Pin(16), 25)
 
 big_bouble = [1,2,3,5,9,10,14,15,19,21,22,23]
 
-def clear(neopixels):
-    neopixels.fill((0, 0, 0))
-    neopixels.write()
-
 def circle():
     for pixel in big_bouble:
         pixels[pixel] = (5,5,20)  
